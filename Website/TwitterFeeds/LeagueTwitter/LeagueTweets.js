@@ -4,11 +4,11 @@
 $(document).ready(function () {
     var displaylimit = 7;
     var twitterprofile = "lolesports";
-	var screenname = "League Esports";
+	var screenname = "lolesports";
     var showdirecttweets = true;
     var showretweets = true;
     var showtweetlinks = true;
-    var showprofilepic = true;
+    var showprofilepic = false;
 	var showtweetactions = true;
 	var showretweetindicator = true;
 	
@@ -20,7 +20,7 @@ $(document).ready(function () {
 	
 	$('#twitter-feed').html(headerHTML + loadingHTML);
 	 
-    $.getJSON('https://tomelliott.com/demos/jquery-twitter-feed/get-tweets1.1.php', //Edit this for specific php file with json
+    $.getJSON('http://localhost/website/TwitterFeeds/LeagueTwitter/LeagueTweets1.1.php', //Edit this for specific php file with json
         function(feeds) {   
 		   //alert(feeds);
             var feedHTML = '';

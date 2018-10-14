@@ -18,15 +18,5 @@ $connection = getConnectionWithAccessToken($consumerkey, $consumersecret, $acces
  
 $tweets = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=".$twitteruser."&count=".$notweets);
  
-//echo json_encode($tweets);
-
-print_r($tweets);
-
-
-foreach($tweets as $item) { //foreach element in $arr
-    $uses = $item['text']; //etc
-    
-    echo $uses;
-}
-
+echo json_encode($tweets);
 ?>

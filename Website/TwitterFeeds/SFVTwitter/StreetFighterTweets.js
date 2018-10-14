@@ -20,7 +20,7 @@ $(document).ready(function () {
 	
 	$('#twitter-feed').html(headerHTML + loadingHTML);
 	 
-    $.getJSON('https://tomelliott.com/demos/jquery-twitter-feed/get-tweets1.1.php', //Edit this for specific php file with json
+    $.getJSON('http://localhost/website/TwitterFeeds/SFVTwitter/StreetTweets1.1.php', //Edit this for specific php file with json
         function(feeds) {   
 		   //alert(feeds);
             var feedHTML = '';
