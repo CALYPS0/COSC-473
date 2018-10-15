@@ -37,7 +37,9 @@
     
     
     
-    <div class="Navigation"></div>
+    <div class="Navigation">
+    <?php include 'SideNavigation.php';?>
+    </div>
     
     <!-- League of Legends NA LCS Teams -->
     <div class="container team-logos" style="background-color: #303030">
